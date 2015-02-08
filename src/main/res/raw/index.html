@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webview-Activity</title>
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="forms.css">
+    <style>
+        body {
+        margin: 20px;
+        }
+        .pure-button.pure-button-success {
+        color: white;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        background: rgb(28, 184, 65);
+        }
+    </style>
+    <script>
+            function toastMe() {
+                var text = document.getElementById("text").value;
+                JSInterface.toastMe(text);
+            }
+            function notifyMe() {
+                var text = document.getElementById("text").value;
+                JSInterface.notifyMe(text);
+            }
+
+    </script>
+</head>
+<body>
+<form class="pure-form">
+    <input id="text" type="text" class="pure-input-2-3" placeholder="Write something"
+           value="Hello, World!">
+</form>
+<br>
+<button class="pure-button pure-button-primary" onclick="javascript:toastMe()">Toast it!</button>
+<button class="pure-button pure-button-success" onclick="javascript:notifyMe()">Notify Me!</button>
+</body>
+</html>
