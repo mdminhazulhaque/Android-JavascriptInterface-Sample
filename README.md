@@ -5,7 +5,7 @@ Call Java (Android) methods from Webview using Javascript
 ## How To
 
 1. Create a class named `JSInterface` inside any Activy or other Intent
-2. Create a public method with `@JavascriptInterface` annotations (<span style="color: red">DO NOT MISSPEL THIS</span>)
+2. Create a public method with `@JavascriptInterface` annotations (Not @Java`S`criptInterface)
 
     ```java
         public class JSInterface {
